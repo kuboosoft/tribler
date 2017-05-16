@@ -1,15 +1,15 @@
 %define _name Tribler
 
-%global gitdate 20170420
-%global commit0 0b49771947681e1f2219a1d029fbbb76f4f6a8f7
+%global gitdate 20170516
+%global commit0 d5db2fd98a416b01e97d0db3043f74016168034d
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
-%global gver .%{gitdate}git%{shortcommit0}
+%global gver .git%{shortcommit0}
 
 
 Name: tribler
 Summary: Privacy enhanced BitTorrent client with P2P content discovery
 Version: 7.0.0
-Release: 2.rc1%{?dist}
+Release: 3.rc2%{?dist}
 License: MIT
 Group: Productivity/Networking/Other
 URL: http://www.tribler.org/
@@ -98,6 +98,9 @@ cp -r twisted %{buildroot}/usr/share/tribler
 
 
 %changelog
+
+* Tue May 16 2017 David Vásquez <davidva AT tutanota DOT com> 7.0.0-3.rc2
+- Updated to 7.0.0-3.rc3
 
 * Sun May 07 2017 David Vásquez <davidva AT tutanota DOT com> 7.0.0-2.rc1
 - Updated to 7.0.0-2.rc1
